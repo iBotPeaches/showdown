@@ -81,6 +81,8 @@
             tbl.push('</table>');
             // we are done with this table and we move along
             out.push(tbl.join('\n'));
+	    // now empty var to prevent double tables
+	    tbl = [];
             continue;
           }
         }
